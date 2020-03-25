@@ -267,7 +267,7 @@ class Hilo4(p:MainActivity) : Thread(){
                             Ganador.add(puntero.textView50.text.toString().toInt())
                             Ganador.add(puntero.textView77.text.toString().toInt())
                             Ganador.add(puntero.textView103.text.toString().toInt())
-
+                            puntero.textView79.setText("Esperando")
                             (0..3).forEach {
                                 if (Ganador[it] == Ganador.max()) {
                                     puntero.textView108.setText("Jugador ${it+1}")
